@@ -1,0 +1,3 @@
+name: "basic - web components (fig4)"
+description: "basic template with web components, incl. nav and gtm code for google analytics"
+create_dir: true
