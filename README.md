@@ -19,6 +19,9 @@ section below for more.)
     -   tabbed layout
     -   table of contents
 -   **basic - code (fig4)**: as above but with code folding
+-   **basic - web components (fig4)**: basic template (no toc) with
+    navbar and GTM tags, both of which need to be modified for the
+    specific situation.
 
 ### Usage
 
