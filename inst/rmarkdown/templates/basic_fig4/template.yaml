@@ -1,2 +1,3 @@
 name: "basic template (fig4)"
 description: "basic template"
+create_dir: false

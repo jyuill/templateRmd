@@ -43,8 +43,9 @@ R Markdown templates require a package. A couple extra steps and it's easy to se
         + **name: template name** as you want to appear in template list when creating new R Markdown
         + **description: some short description** (got errors when tried to skip)
         + works for me with template name in quotes, other examples show no quotes.
-        + description supposedly optional (as long as you have the line 2 for it) but I got errors that were resolved when I added description
+        + description supposedly optional (as long as you have the line 2 for it) but I got errors that were resolved when I added description.
     + **skeleton** folder: add markdown file 'skeleton.Rmd' with template features.
+    + **delete skeleton.html** after testing - otherwise, will show up when you use template.
 5. Create Github repo based on the R project:
     + easy way to do this is to manually create a Github repo with same name.
     + follow instructions for commands to run in Shell to push files from computer to repo.
