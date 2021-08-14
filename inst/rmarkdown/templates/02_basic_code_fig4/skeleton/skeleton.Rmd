@@ -1,0 +1,47 @@
+---
+title: "Untitled"
+author: "`r Sys.getenv('USER')`"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: true
+    code_fold: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      message=FALSE,
+                      warning=FALSE,
+                      fig.height=3.5,
+                      fig.width=6)
+
+library(tidyverse)
+library(lubridate)
+library(here)
+library(PerformanceAnalytics)
+library(plotly)
+library(scales)
+library(gridExtra)
+library(DT)
+
+```
+
+## Intro {.tabset}
+
+Introduction with description, objectives, key data parameters.
+
+### Data
+
+Data summary:
+
+```{r cars}
+summary(cars)
+```
+
+### Plots
+
+You can also embed plots, for example:
+
+```{r pressure}
+plot(pressure)
+```

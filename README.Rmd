@@ -40,8 +40,9 @@ R Markdown templates require a package. A couple extra steps and it's easy to se
 3. New directory for markdown template: **inst > rmarkdown > templates > folder name for template**
 4. In folder for template:
     + **template.yaml** file with 2 rows/lines: 
-        + **name: template name** as you want to appear in template list when creating new R Markdown
-        + **description: some short description** (got errors when tried to skip)
+        + **name: template name** as you want to appear in template list when creating new R Markdown.
+        + **description: some short description** (got errors when tried to skip).
+        + **create_dir: false** to avoid creating new folder with markdown files when using template.
         + works for me with template name in quotes, other examples show no quotes.
         + description supposedly optional (as long as you have the line 2 for it) but I got errors that were resolved when I added description.
     + **skeleton** folder: add markdown file 'skeleton.Rmd' with template features.
@@ -58,10 +59,19 @@ References for template creation:
 * https://rstudio.github.io/rstudio-extensions/rmarkdown_templates.html
 * https://chester.rbind.io/ecots2k16/template_pkg/
 
-## Updates
+## Update/Add Templates
 
 1. Make changes in RStudio, as with any repo.
 2. Push changes back to Github.
 3. Re-install package for use - see 'Usage' above.
 4. Add new templates by creating new folder under 'templates' and pushing to repo.
+
+## Extend with Supporting Files
+
+You can bundle supporting files with a template by adding them to the 'skeleton' folder:
+
+* skeleton/logo.png
+* skeleton/styles.css (accompanied by css: styles.css in skeleton.Rmd yaml header)
+
+If you have supporting files, probably want to use 'create_dir: true' in template.yaml.
 
