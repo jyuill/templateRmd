@@ -1,13 +1,13 @@
 Package: templateRmd
-Title: Templates for R Markdown
-Version: 0.0.0.9000
+Title: Templates for R Markdown customized for Figure 4
+Version: 0.9
 Authors@R: 
     person(given = "John",
            family = "Yuill",
            role = c("aut", "cre"),
            email = "john@fig4.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: Templates for commonly-used setup for R Markdown files to expedite.
+Description: Templates incorporating commonly-used features for Figure 4 R Markdown files.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
