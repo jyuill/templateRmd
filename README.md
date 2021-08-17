@@ -1,7 +1,7 @@
 README
 ================
 JY
-2021-08-14
+2021-08-16
 
 ## R Markdown Templates for Figure 4
 
@@ -40,7 +40,7 @@ easy to setup, share, maintain.
         package
 2.  DESCRIPTION: update info
 3.  New directory for markdown template: **inst &gt; rmarkdown &gt;
-    templates &gt; folder name for template**
+    templates &gt; folder name for template &gt; skeleton**
 4.  In folder for template:
     -   **template.yaml** file with 2 rows/lines:
         -   **name: template name** as you want to appear in template

@@ -38,7 +38,7 @@ R Markdown templates require a package. A couple extra steps and it's easy to se
 1. In RStudio: create NEW project > New directory > R package using devtools > name of package
     + this will load a couple of files/directories needed for basic package
 2. DESCRIPTION: update info
-3. New directory for markdown template: **inst > rmarkdown > templates > folder name for template**
+3. New directory for markdown template: **inst > rmarkdown > templates > folder name for template > skeleton**
 4. In folder for template:
     + **template.yaml** file with 2 rows/lines: 
         + **name: template name** as you want to appear in template list when creating new R Markdown.
