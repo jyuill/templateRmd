@@ -4,7 +4,7 @@ library(RWordPress)
 library(knitr)
 
 ## CREDENTIALS: set up initial credentials & values needed
-source('../credite.R')
+source('credite.R') ## will find file at top level of project
 options(WordpressLogin= c(johnyuill=wp_p),
         WordpressURL=paste0('https://',wp_blog,'.wordpress.com/xmlrpc.php'))
 
