@@ -3,12 +3,12 @@
 library(RWordPress)
 library(knitr)
 
-## set up initial credentials & values needed
-source('credite.R')
+## CREDENTIALS: set up initial credentials & values needed
+source('../credite.R')
 options(WordpressLogin= c(johnyuill=wp_p),
         WordpressURL=paste0('https://',wp_blog,'.wordpress.com/xmlrpc.php'))
 
-# Set up Upload plots: set knitr options
+## PLOTS: Set up Upload plots: set knitr options
 ## - saves files in a folder in WordPress
 ## can be found in Media section by date; will be named: <name of code chunk>-1.png
 ## - can edit caption, alt text, description, get URL
@@ -29,9 +29,10 @@ blogpostid <- "" ## needed with editPost
 blogcat <- c('R Stats', 'R Markdown')
 ##############################################################################
 
-# Upload featured image / post thumbnail: option: wp_post_thumbnail=postThumbnail$id
+## FEATURE IMAGE: Upload featured image / post thumbnail: option: wp_post_thumbnail=postThumbnail$id
 postThumbnail <- RWordPress::uploadFile(blogthumbnail,overwrite = TRUE)
 
+## UPLOAD TO WORDPRESS
 knit2wp(blogfile, ## markdown file to publish
         title = blogtitle, ## title for the post in WordPress
         publish = FALSE, ## FALSE to add as draft; TRUE to go direct to publish
